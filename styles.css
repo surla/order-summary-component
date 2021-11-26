@@ -29,8 +29,18 @@ button {
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
-	text-align: center;
-  background-image: url(./images/pattern-background-desktop.svg)
+  text-align: center;
+}
+
+p {
+  color: var(--desaturated-blue);
+}
+
+.container {
+  background: var(--pale-blue) url(./images/pattern-background-mobile.svg)
+    no-repeat top / contain;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -38,23 +48,98 @@ body {
   border-radius: 20px 20px 0 0;
 }
 
-.container {
-  align-items: center;
+.card {
+  width: 350px;
+  flex-direction: column;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  flex-direction: column;
   justify-content: center;
+}
+
+.card-paragraph {
+  padding: 20px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.price-content {
+  background-color: var(--very-pale-blue);
+  padding: 20px;
   border-radius: 20px;
-  height: 100vh;
+  justify-content: space-between;
 }
 
-.content {
-  width: 420px;
-}
-
-.pricing {
-	width: 100%;
+.price {
+  margin-left: 1.5rem;
+  vertical-align: center;
 }
 
 .btn-group {
-  display: block;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 20px;
+  width: 100%;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.02rem;
+}
+
+.btn-change {
+  background-color: transparent;
+  border-style: none;
+  border-color: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--bright-blue);
+}
+
+.btn-change:hover {
+  color: var(--desaturated-blue);
+}
+.btn-primary {
+  background-color: var(--bright-blue);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: var(--desaturated-blue);
+}
+
+.btn-secondary:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    background: var(--pale-blue) url(./images/pattern-background-desktop.svg)
+      no-repeat top / contain;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 400px;
+  }
 }
 
 /* Attribution */
