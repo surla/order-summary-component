@@ -21,12 +21,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: [https://github.com/surla/order-summary-component](https://github.com/surla/order-summary-component)
+- Live Site URL: [https://surla.github.io/order-summary-component/](https://surla.github.io/order-summary-component/)
 
 ### Built with
 
