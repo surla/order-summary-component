@@ -18,26 +18,28 @@
   </head>
   <body>
     <div class="container flex">
-      <div>
+      <div class="card flex">
         <img src="./images/illustration-hero.svg" alt="" class="hero" />
-        <div class="content">
-          <h1>Order Summary</h1>
-          <p>
+        <div class="card-content flex">
+          <h2>Order Summary</h2>
+          <p class="card-paragraph">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <article class="flex">
-            <div class="pricing flex">
+          <article class="price-content flex">
+            <div class="flex">
               <img src="./images/icon-music.svg" alt="" />
-              <h4>Annual Plan</h4>
-              <p>$59.99/year</p>
+              <div class="price">
+                <h4>Annual Plan</h4>
+                <p>$59.99/year</p>
+              </div>
             </div>
-            <a href="#">Change</a>
+            <button class="btn-change">Change</button>
           </article>
 
-          <div class="btn-group">
-            <button class="btn">Proceed to Payment</button>
-            <button class="btn">Cancel Order</button>
+          <div class="btn-group flex">
+            <button class="btn btn-primary">Proceed to Payment</button>
+            <button class="btn btn-secondary">Cancel Order</button>
           </div>
         </div>
       </div>
